@@ -1,0 +1,12 @@
+on:
+    push:
+        branches: ["qa"]
+name: release
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            -uses: google-github-actions/release-please-action@v3
+             with:
+                release-type: node
+                prerelease: true
