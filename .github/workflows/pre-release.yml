@@ -11,3 +11,4 @@ jobs:
         with:
           release-type: node
           prerelease: true
+          default-branch: qa
